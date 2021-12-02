@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="sharedviewmodel"
+            type="com.dawidk.mafia.ui.fragment.game.GameSharedViewModel" />
+
+    </data>
+
+    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/profileSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/cardBackAssignment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/cardBackAssignmentFrame"
+                    layout="@layout/card_assigning_back" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cardFrontAssignment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <include
+                    android:id="@+id/cardFrontAssignmentFrame"
+                    layout="@layout/card_assigning_front" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/give_phone_to_the_first_player"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/beginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lets_begin"
+                android:layout_below="@id/infoText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+    </ViewSwitcher>
+</layout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/assign_layout">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/text_background"
+                    android:layout_marginTop="80dp"/>
+
+                <EditText
+                    android:id="@+id/playerNameEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="97dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/stencil1935"
+                    android:gravity="center"
+                    android:hint="@string/enter_your_name_here"
+                    android:maxLength="13"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/questionMarkFront"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\?"
+                    android:textSize="330sp"
+                    android:fontFamily="@font/niagara_solid"
+                    android:layout_gravity="center"
+                    android:alpha="0.5"/>
+
+                <ImageView
+                    android:id="@+id/gangsterFrontImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gangster"
+                    android:layout_gravity="center"
+                    android:alpha="0.0"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85"
+                    android:layout_marginBottom="5dp" />
+
+                <ImageView
+                    android:id="@+id/citizenFrontImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/citizen"
+                    android:alpha="0.0"
+                    android:scaleY="0.6"
+                    android:scaleX="0.6"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/policeFrontImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/police_officer"
+                    android:alpha="0.0"
+                    android:scaleY="0.70"
+                    android:scaleX="0.70"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="190dp"
+                    android:fontFamily="@font/stencil1935"
+                    android:gravity="center"
+                    android:text="@string/swipe_to_see_your_role"
+                    android:textColor="@color/black"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginTop="270dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+        </FrameLayout>
+</layout>

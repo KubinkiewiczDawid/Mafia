@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_nav_graph"
+    app:startDestination="@id/rolesAssignmentFragment">
+
+    <fragment
+        android:id="@+id/rolesAssignmentFragment"
+        android:name="com.dawidk.mafia.ui.fragment.game.assignment.RolesAssignmentFragment"
+        android:label="roles_assignment_fragment"
+        tools:layout="@layout/roles_assignment_fragment">
+        <argument
+            android:name="playersAmount"
+            app:argType="integer" />
+    </fragment>
+
+
+</navigation>

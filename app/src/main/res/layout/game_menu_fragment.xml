@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.dawidk.mafia.ui.fragment.menu.GameMenuViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.menu.GameMenuFragment">
+
+        <FrameLayout
+            android:id="@+id/questionMarks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/questionMarksFrame"
+                layout="@layout/ui_question_marks" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:alpha="0.4"
+            android:fontFamily="@font/stencil1935"
+            android:text="@string/mafia"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="90sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gangsterImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_24"
+            android:alpha="0.4"
+            android:src="@drawable/gangster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/gameMenuPlayerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toTopOf="@id/gameMenuPlayButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <include
+                android:id="@+id/uiPlayersNumberButton"
+                layout="@layout/ui_players_number_button"
+                app:playersAmount="@{viewmodel.playersAmount.toString()}"
+                app:increasePlayersAmount="@{viewmodel::increasePlayersAmount}"
+                app:decreasePlayersAmount="@{viewmodel::decreasePlayersAmount}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/gameMenuPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toTopOf="@id/gameMenuHowToPlayButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <include
+                android:id="@+id/uiPlayButton"
+                layout="@layout/ui_play_button"
+                app:playClicked="@{viewmodel::navigateToGameGraph}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/gameMenuHowToPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <include
+                android:id="@+id/uiHowToPlayButton"
+                layout="@layout/ui_how_to_play_button"
+                app:howToPlayClicked="@{viewmodel::navigateToHowToPlayFragment}" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,38 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/card_shape" />
+
+        <FrameLayout
+            android:id="@+id/assignLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/assignLayoutFrame"
+                layout="@layout/assign_layout" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/assignEndLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/assignEndLayoutFrame"
+                layout="@layout/card_assigning_end" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+</layout>
