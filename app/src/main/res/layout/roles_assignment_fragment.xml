@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
         <variable
-            name="sharedviewmodel"
-            type="com.dawidk.mafia.ui.fragment.game.GameSharedViewModel" />
+            name="viewmodel"
+            type="com.dawidk.mafia.ui.fragment.game.assignment.RolesAssignmentViewModel" />
 
     </data>
 
-    <ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    <ViewSwitcher
         android:id="@+id/profileSwitcher"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -26,6 +27,13 @@
                 <include
                     android:id="@+id/cardBackAssignmentFrame"
                     layout="@layout/card_assigning_back" />
+
+                <include
+                    android:id="@+id/cardFrontAssignmentFrame"
+                    layout="@layout/card_assigning_front"
+                    app:seeYourRoleClicked="@{viewmodel::savePlayerName}"
+                    app:afterPlayerNameChanged="@{viewmodel::afterPlayerNameChange}"
+                    app:playerName="@{viewmodel.playerName}" />
             </FrameLayout>
 
             <FrameLayout
@@ -33,10 +41,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center">
-
-                <include
-                    android:id="@+id/cardFrontAssignmentFrame"
-                    layout="@layout/card_assigning_front" />
 
             </FrameLayout>
         </RelativeLayout>

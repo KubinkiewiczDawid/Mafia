@@ -19,7 +19,10 @@
 
             <include
                 android:id="@+id/assignLayoutFrame"
-                layout="@layout/assign_layout" />
+                layout="@layout/assign_layout"
+                app:seeYourRoleClicked="@{seeYourRoleClicked}"
+                app:afterPlayerNameChanged="@{afterPlayerNameChanged}"
+                app:playerName="@{playerName}" />
         </FrameLayout>
 
         <FrameLayout
