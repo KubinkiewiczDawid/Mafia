@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp">
-    
+
     <ImageView
         android:id="@+id/instructionImageBackground"
         android:layout_width="0dp"
@@ -17,19 +17,21 @@
         app:layout_constraintStart_toStartOf="@id/instructionIv"
         app:layout_constraintTop_toTopOf="@id/instructionIv"
         app:layout_constraintBottom_toBottomOf="@id/instructionIv"
-        android:src="@drawable/transparent_rectangle"/>
+        android:src="@drawable/transparent_rectangle" />
 
     <ImageView
         android:id="@+id/instructionIv"
-        android:layout_width="270dp"
-        android:layout_height="270dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent=".9"
+        app:layout_constraintHeight_percent="0.37"
         android:padding="@dimen/grid_2"
         android:src="@drawable/police_officer"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/titleTv"

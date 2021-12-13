@@ -21,7 +21,7 @@ class GameMenuViewModel : ViewModel() {
 
     fun increasePlayersAmount() {
         if (_playersAmount.value < MAX_PLAYERS_AMOUNT)
-            _playersAmount.value = _playersAmount.value.plus(1)
+            _playersAmount.value = _p:wqayersAmount.value.plus(1)
     }
 
     fun decreasePlayersAmount() {

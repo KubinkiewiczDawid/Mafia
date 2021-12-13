@@ -127,8 +127,6 @@ class GameMenuFragment : Fragment() {
             fillAfter = false // Needed to keep the result of the animation
             duration = 1000
         } // Pivot point of Y scaling
-
-
     }
 
     private fun menuFadeOut() {

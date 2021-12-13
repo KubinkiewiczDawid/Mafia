@@ -9,15 +9,16 @@
         <entry key="app/src/main/res/drawable/text_background.xml" value="0.22314814814814815" />
         <entry key="app/src/main/res/drawable/transparent_rectangle.xml" value="0.22685185185185186" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
-        <entry key="app/src/main/res/layout/assign_layout.xml" value="0.23641304347826086" />
+        <entry key="app/src/main/res/layout/assign_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/card_assigning_back.xml" value="0.23641304347826086" />
-        <entry key="app/src/main/res/layout/card_assigning_front.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/card_assigning_end.xml" value="0.10778985507246377" />
+        <entry key="app/src/main/res/layout/card_assigning_front.xml" value="0.1" />
         <entry key="app/src/main/res/layout/frame_assign_end.xml" value="0.23641304347826086" />
         <entry key="app/src/main/res/layout/frame_how_to_play_button.xml" value="0.24230072463768115" />
         <entry key="app/src/main/res/layout/game_menu_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/how_to_play_fragment.xml" value="0.24230072463768115" />
-        <entry key="app/src/main/res/layout/item_container_how_to_play.xml" value="0.24230072463768115" />
-        <entry key="app/src/main/res/layout/roles_assignment_fragment.xml" value="0.23641304347826086" />
+        <entry key="app/src/main/res/layout/item_container_how_to_play.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/roles_assignment_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/ui_game_menu_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/ui_go_back_button.xml" value="0.24230072463768115" />
         <entry key="app/src/main/res/layout/ui_how_to_play_button.xml" value="0.23072916666666668" />

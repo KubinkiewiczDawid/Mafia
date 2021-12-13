@@ -21,4 +21,7 @@
     <dimen name="text_size_h4">14sp</dimen>
     <dimen name="text_size_title">24sp</dimen>
     <dimen name="text_size_setting">20sp</dimen>
+
+    <integer name="card_anim_length">500</integer>
+    <integer name="card_anim_length_half">250</integer>
 </resources>
